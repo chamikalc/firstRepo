@@ -27,5 +27,5 @@ jobs:
       run: |
            cd tools-plugin/intellij
            ./gradlew buildPlugin
-           ./gradlew publishPlugin -Dorg.gradle.project.intellijPublishToken=${{secrets.IDEA_TOKEN}}
+           ./gradlew publishPlugin -PintellijPublishToken=${{ secrets.IDEA_TOKEN }}
       
